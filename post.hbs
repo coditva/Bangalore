@@ -7,14 +7,12 @@
         <h1 class="post-content-title">{{title}}</h1>
     </header>
 
+    <div class="post-content-date">
+        <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+    </div>
+
     {{#if custom_excerpt}}
         <p class="post-content-excerpt">{{custom_excerpt}}</p>
-    {{/if}}
-
-    {{#if feature_image}}
-    <div class="post-content-image">
-        <img class="kg-image" src="{{feature_image}}" alt="{{title}}" />
-    </div>
     {{/if}}
 
     <div class="post-content-body">
@@ -29,6 +27,11 @@
         {{subscribe_form placeholder="youremail@example.com"}}
     </section>
     {{/if}}
+
+    Tagged:
+    {{#foreach tags}}
+        <a class="post-content-tag" href="{{url}}">{{name}}</a>
+    {{/foreach}}
 
     <footer class="post-content-footer">
 

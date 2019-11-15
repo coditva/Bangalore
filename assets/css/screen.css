@@ -65,7 +65,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 13vw 0;
+    padding: 7vw 0;
     max-width: 70%;
     margin: auto;
     text-align: center;
@@ -465,6 +465,12 @@ body {
     transition: all 0.3s cubic-bezier(.33,0,.2,1);
 }
 
+.post-card-primary-tag {
+    text-align: left;
+    font-size: 2.5rem;
+    padding: 0.3em;
+}
+
 /* Posts without images */
 .post-card.no-image:before {
     display: block;
@@ -527,8 +533,20 @@ body {
     text-align: center;
 }
 
+.post-content-date {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 0 4vw;
+}
+
+.post-content-tag {
+    padding: 0 1em 0 0;
+    color: var(--color-primary);
+    align: left;
+}
+
 .post-content-excerpt {
-    margin: -2vw 0 3vw;
+    margin: 0 0 4vw;
     font-size: 2.2rem;
     line-height: 1.6em;
     color: var(--color-base);
