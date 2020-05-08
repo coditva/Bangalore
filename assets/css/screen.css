@@ -677,6 +677,22 @@ body {
     transform: rotate(45deg);
 }
 
+.post-content-comments {
+  padding-top: 50px;
+}
+
+.commento-submit-button {
+  background: unset !important;
+}
+
+.commento-logo-container {
+  display: none !important;
+}
+
+.commento-input:focus {
+  box-shadow: unset !important;
+}
+
 .footnotes-sep {
     margin-bottom: 30px;
 }
